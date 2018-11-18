@@ -1,0 +1,30 @@
+@import "mixins";
+.verifiy-invitation {
+  .hide {
+    display: none;
+  }
+}
+
+.staff-info {
+  .hide {
+    display: none;
+  }
+}
+
+.city-outlet {
+  .align-city-remove-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sel-width {
+    width: 300px;
+  }
+  .add-city {
+    margin-top: 10px;
+  }
+}
+.staff-modal {
+  @include modal-header();
+}

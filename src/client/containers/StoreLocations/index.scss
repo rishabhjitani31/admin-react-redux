@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+.store-location-container {
+  @include active-deactive();
+  @include edit-delete();
+  .amenity-thumb-img {
+    max-height: 30px;
+  }
+  .display-flex {
+    @include display-flex();
+    justify-content: space-between;
+    width: 100%;
+    .download-btn {
+      color: rgb(255, 255, 255);
+      border-color: rgb(53, 177, 83);
+      background-color: rgb(53, 177, 83);
+    }
+    .ant-input-search {
+      width: 221px;
+    }
+  }
+}

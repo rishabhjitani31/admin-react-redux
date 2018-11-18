@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixins";
+
+.dashboard-layout {
+  .alignment-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .chartCard {
+    width: 20%;
+  }
+  .chartCard-title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .chartCard-amount {
+    font-size: 2.76rem;
+    color: #fff;
+    margin-bottom: 0px;
+    line-height: 35px;
+  }
+  .chartCard-first {
+    @include chartCardgradiant($firstCardColor1, $firstCardColor2);
+  }
+  .chartCard-second {
+    @include chartCardgradiant($secondCardColor1, $secondCardColor2);
+  }
+  .chartCard-third {
+    @include chartCardgradiant($thirdCardColor1, $thirdCardColor2);
+  }
+  .chartCard-forth {
+    @include chartCardgradiant($forthCardColor1, $forthCardColor2);
+  }
+
+  .overflowWords {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px;
+  }
+}

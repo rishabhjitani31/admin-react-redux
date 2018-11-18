@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+.app {
+  @include edit-delete();
+  .column-thumb-img {
+    max-height: 30px;
+  }
+}
+.modal-container {
+  @include modal-header();
+}

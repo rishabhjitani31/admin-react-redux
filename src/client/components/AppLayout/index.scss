@@ -1,0 +1,12 @@
+@import "variables";
+
+.main-layout {
+  min-height: 100vh;
+  .main-header {
+    background: $equinox-color;
+    height: 100px;
+  }
+  .main-footer {
+    text-align: center;
+  }
+}

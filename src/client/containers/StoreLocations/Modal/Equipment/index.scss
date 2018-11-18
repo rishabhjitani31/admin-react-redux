@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+
+.equipment-container {
+  .addBtnDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    .addBtn {
+      width: 60%;
+    }
+  }
+  .go-back {
+    margin-top: 15px;
+  }
+}
+.equipment-new-form {
+  @include modal-header();
+  .ant-form {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,13 @@
+//get BRANDS data
+export const GET_BRANDS_DATA = 'GET_BRANDS_DATA'
+export const GET_BRANDS_DATA_REQUEST = 'GET_BRANDS_DATA_REQUEST'
+export const GET_BRANDS_DATA_SUCCESS = 'GET_BRANDS_DATA_SUCCESS'
+export const GET_BRANDS_DATA_FAILURE = 'GET_BRANDS_DATA_FAILURE'
+
+//modal visiblity
+export const GET_BRANDS_VISIBLE = 'GET_BRANDS_VISIBLE'
+
+//brand image upload
+export const BRANDS_IMAGE_UPLOAD = 'BRANDS_IMAGE_UPLOAD'
+export const ON_SUBMIT = 'ON_SUBMIT'
+export const ON_REMOVE_IMAGE = 'ON_REMOVE_IMAGE'

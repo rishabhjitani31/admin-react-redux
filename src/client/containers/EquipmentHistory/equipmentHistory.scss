@@ -1,0 +1,8 @@
+@import "variables";
+@import "mixins";
+.equipment-history {
+  .go-back {
+    margin-top: 15px;
+  }
+  @include active-deactive();
+}

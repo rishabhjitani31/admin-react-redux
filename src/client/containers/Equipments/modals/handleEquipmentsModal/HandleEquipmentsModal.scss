@@ -1,0 +1,8 @@
+@import "mixins";
+
+.handle-equipments-modal {
+  .selected-img {
+    width: 100px;
+  }
+  @include modal-header();
+}

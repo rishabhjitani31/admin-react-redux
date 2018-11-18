@@ -1,0 +1,79 @@
+@import "variables";
+
+@mixin edit-delete {
+  .anticon {
+    &.anticon-edit {
+      cursor: pointer;
+      color: $light-blue;
+    }
+    &.anticon-delete {
+      cursor: pointer;
+      color: $btn-red;
+    }
+  }
+}
+@mixin action-style {
+  display: flex;
+  justify-content: space-between;
+  width: 35px;
+}
+
+@mixin chartCardgradiant($CardColor1, $CardColor2) {
+  background: $CardColor1; /* Old browsers */
+  background: -moz-linear-gradient(
+    left,
+    $CardColor1 0%,
+    $CardColor2 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    left,
+    $CardColor1 0%,
+    $CardColor2 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to right,
+    $CardColor1 0%,
+    $CardColor2 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$CardColor1, endColorstr=$CardColor2,GradientType=1 ); /* IE6-9 */
+}
+
+@mixin status-style {
+  color: #fff;
+  padding: 2px 5px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+@mixin display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin active-deactive {
+  .Active-Cell {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    color: $white;
+    &.Active-yes {
+      background: $active-yes;
+    }
+    &.Active-no {
+      background: $btn-red2;
+    }
+  }
+}
+@mixin modal-header {
+  .ant-modal-content {
+    .ant-modal-header {
+      background: $equinox-color;
+      .ant-modal-title {
+        color: $white;
+      }
+    }
+    .ant-modal-close {
+      color: $white;
+    }
+  }
+}

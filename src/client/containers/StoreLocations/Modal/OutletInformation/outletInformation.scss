@@ -1,0 +1,14 @@
+.outletInformation-container {
+  .ant-col-4 {
+    &.ant-form-item-label {
+      text-align: left;
+    }
+  }
+  .back-save-btn {
+    display: flex;
+    justify-content: flex-end;
+    .ant-btn.ant-btn-primary {
+      margin-right: 10px;
+    }
+  }
+}

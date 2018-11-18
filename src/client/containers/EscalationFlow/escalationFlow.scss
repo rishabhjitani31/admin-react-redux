@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+.escalation-flow-main {
+  .escalation-column-container {
+    display: flex;
+
+    .escalation-icon-edit {
+      color: $light-blue;
+    }
+    .escalation-icon-delete {
+      color: $btn-red;
+    }
+    .escalation-icon-div {
+      margin-left: 5px;
+    }
+  }
+}
+.escalation-flow-model {
+  @include modal-header();
+}

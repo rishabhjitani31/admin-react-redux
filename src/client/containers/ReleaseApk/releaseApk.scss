@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixins";
+.releaseApk {
+  .action {
+    @include display-flex();
+    justify-content: space-around;
+  }
+  .Active {
+    @include active-deactive();
+    width: 65px;
+    display: block;
+  }
+  .column-textArea {
+    border-radius: 5px;
+    background-color: rgb(240, 242, 247);
+  }
+  .Active-Cell {
+    color: $white;
+    text-align: center;
+    border-radius: 5px;
+    &.isTablet {
+      background: $active-yes;
+      min-width: 50px;
+      display: block;
+    }
+    &.isStaff {
+      background: #465bc3;
+      min-width: 50px;
+      display: block;
+    }
+    &.isOther {
+      background: darkgray;
+      min-width: 50px;
+      display: block;
+    }
+    &.isSystem {
+      background: darkorange;
+      min-width: 50px;
+      display: block;
+    }
+  }
+}
+.modal-container {
+  @include modal-header();
+}

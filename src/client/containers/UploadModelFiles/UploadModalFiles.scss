@@ -1,0 +1,42 @@
+.upload-model-container {
+  .uploadModalAction {
+    font-size: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+  }
+
+  .tableImages {
+    height: 30px;
+  }
+
+  .editFileNameInput {
+    width: 350;
+  }
+
+  .upload-list-inline .ant-upload-list-item {
+    float: left;
+    width: 200px;
+    margin-right: 8px;
+  }
+
+  .upload-list-inline .ant-upload-animate-enter {
+    animation-name: uploadAnimateInlineIn;
+  }
+
+  .upload-list-inline .ant-upload-animate-leave {
+    animation-name: uploadAnimateInlineOut;
+  }
+
+  .upload-img-container {
+    margin-top: 15px;
+  }
+
+  .upload-img-buttons {
+    margin: 5px 0;
+  }
+
+  .ant-upload-list-picture .ant-upload-list-item-error,
+  .ant-upload-list-picture-card .ant-upload-list-item-error {
+    border-color: lightgrey;
+  }
+}

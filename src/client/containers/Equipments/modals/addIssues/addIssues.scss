@@ -1,0 +1,29 @@
+@import "mixins";
+.handle-issues-container {
+  .issues-action-buttons {
+    font-size: 20px;
+    margin: 0 2px;
+    cursor: pointer;
+  }
+
+  .disp-flex {
+    display: flex;
+  }
+
+  .disp-none {
+    display: none;
+  }
+
+  .mrgn-rt5 {
+    margin-bottom: 5px;
+  }
+
+  .mrgn-tp2 {
+    margin-top: 2px;
+  }
+
+  .add-issue-action-buttons {
+    margin-left: 3px;
+  }
+  @include modal-header();
+}

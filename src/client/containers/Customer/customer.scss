@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+
+.customer-container {
+  .amenity-thumb-img {
+    max-height: 30px;
+  }
+}
+.modal-container {
+  @include modal-header();
+}

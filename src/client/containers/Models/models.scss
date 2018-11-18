@@ -1,0 +1,23 @@
+@import "variables";
+@import "mixins";
+
+.model-container {
+}
+.add-edit-modal-container {
+  width: 400px !important;
+  @include modal-header();
+  .modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .ant-input,
+  .ant-input:active,
+  .ant-input:focus {
+    border-radius: 0px !important;
+    border: none !important;
+    border-bottom: 1px solid #80808054 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+}

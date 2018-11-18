@@ -1,0 +1,15 @@
+@import "variables";
+.model-column-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .model-icon-edit {
+    color: $light-blue;
+  }
+  .model-icon-delete {
+    color: $btn-red;
+  }
+  .margin-left-10 {
+    margin-left: 10px;
+  }
+}

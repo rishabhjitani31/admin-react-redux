@@ -1,0 +1,4 @@
+@import "mixins";
+.tablet-container {
+  @include active-deactive();
+}

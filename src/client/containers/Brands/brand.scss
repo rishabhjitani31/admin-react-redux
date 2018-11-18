@@ -1,0 +1,10 @@
+@import "variables";
+@import "mixins";
+.brand {
+  .column-thumb-img {
+    max-height: 30px;
+  }
+}
+.add-edit-modal-container {
+  @include modal-header();
+}

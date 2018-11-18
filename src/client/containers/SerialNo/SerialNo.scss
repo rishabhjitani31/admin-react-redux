@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+.serial-no {
+  @include active-deactive();
+}
+.align-form-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .align-input-serial-no {
+    width: 90%;
+    margin-top: 5px 8px 5px 0;
+  }
+  .align-select-warranty {
+    width: 80%;
+    margin: 5px 8px 5px 0;
+  }
+}
+.width-100 {
+  width: 100%;
+}
+.add-edit-modal-container {
+  @include modal-header();
+}

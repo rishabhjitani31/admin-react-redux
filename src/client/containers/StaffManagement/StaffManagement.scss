@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+.staff {
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    width: 35px;
+    .anticon {
+      &.anticon-edit {
+        cursor: pointer;
+        color: $light-blue;
+      }
+      &.anticon-delete {
+        cursor: pointer;
+        color: $btn-red;
+      }
+    }
+  }
+}

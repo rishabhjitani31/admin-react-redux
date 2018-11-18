@@ -1,0 +1,63 @@
+import {
+  GET_BRANDS_DATA_FAILURE,
+  GET_BRANDS_DATA_REQUEST,
+  GET_BRANDS_DATA_SUCCESS,
+  GET_BRANDS_VISIBLE,
+  BRANDS_IMAGE_UPLOAD,
+  ON_SUBMIT,
+  ON_REMOVE_IMAGE
+} from 'constants/brands'
+
+const brands = (
+  state = {
+    isFetching: false,
+    brandslist: [],
+    error: null,
+    visible: false,
+    record: null,
+    sucessMessage: null,
+    errorMessage: null,
+    fileList: [],
+    loading: false,
+    image_urls: [],
+    isLoading: false,
+    removeImageData: null
+  },
+  action
+) => {
+  switch (action.type) {
+    case GET_BRANDS_DATA_REQUEST:
+      return { ...state, isFetching: true }
+    case GET_BRANDS_DATA_SUCCESS:
+      return {
+        ...state,
+        brandslist: action.response.data || [],
+        isFetching: false
+      }
+    case GET_BRANDS_DATA_FAILURE:
+      return { ...state, error: action.error, isFetching: false }
+    case GET_BRANDS_VISIBLE:
+      return { ...state, visible: action.visible, record: action.record }
+    case BRANDS_IMAGE_UPLOAD:
+      return {
+        ...state,
+        fileList: action.fileList,
+        loading: action.loading,
+        image_urls: action.image_urls
+      }
+    case ON_SUBMIT:
+      return {
+        ...state,
+        isLoading: action.isLoading
+      }
+    case ON_REMOVE_IMAGE:
+      return {
+        ...state,
+        removeImageData: action.data
+      }
+    default:
+      return state
+  }
+}
+
+export default brands

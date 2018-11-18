@@ -1,0 +1,7 @@
+@import "variables";
+@import "mixins";
+.zone {
+}
+.modal-container {
+  @include modal-header();
+}
